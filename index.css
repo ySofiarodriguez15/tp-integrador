@@ -1,3 +1,4 @@
+
 .header{
     background-color: rgb(82, 82, 82);
 }
@@ -50,13 +51,7 @@
     align-content: center;
 }
 
-.formButton{
-    margin: 10px 10px;
-    background-color: rgb(153, 202, 80);
-    color: white;
-    font-size: 20px;
-    font-style: bold;
-    height: 50px;
-    width: 150px;
-}
 
+.buttonsPpal{
+    display: flex;
+}
