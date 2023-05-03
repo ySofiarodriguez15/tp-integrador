@@ -56,3 +56,12 @@
     display: flex;
 }
 
+.bg-ppal{
+    background-image: url("./images/ba3.jpg");
+    margin: 0px;
+}
+
+.textLogo{
+    color: white;
+    font-style: bold;
+}
