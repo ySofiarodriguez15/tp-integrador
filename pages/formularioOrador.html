@@ -66,37 +66,48 @@
     <br>
     <br>
 
+    <div class="row justify-content-center">
+        <div col-12>
+            <h4 class="text-center fw-normal">Venta</h4>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div col-12>
+            <h1 class="text-center">VALOR DE TICKET $200</h1>
+        </div>
+    </div>
+
     <!--Formulario-->
         <div class="mb-6">
         <div class="row g-3 justify-content-center mb-3">
             <div class="form-group col-md-3">
             
-            <input type="text" class="form-control" id="inputState" placeholder="Nombre">
+            <input type="text" class="form-control" placeholder="Nombre" id="nombreTickets">
             </div>
             <div class="form-group col-md-3">
     
-            <input type="text" class="form-control" id="inputState" placeholder="Apellido">
+            <input type="text" class="form-control" placeholder="Apellido" id="apellidoTickets">
             </div>
         </div>
         <div>
             <div class="row g-3 justify-content-center mb-3">
                 <div class="form-group col-md-6">
                 
-                <input type="text" class="form-control" id="inputEmail4" placeholder="Correo">
+                <input type="text" class="form-control" placeholder="Correo" id="correoTickets">
                 </div>
             </div>
             <div>
                 <div class="row g-3 justify-content-center mb-6">
                     <div class="form-group col-md-3">
                         <label for="inputState">Cantidad</label>
-                    <input type="text" class="form-control" id="inputState" placeholder="Cantidad">
+                    <input type="text" class="form-control" id="cantidadTickets" placeholder="Cantidad">
                     </div>
                     
                     <div class="form-group col-md-3 mb-6">
                         <label for="inputState">Categoría</label>
-                        <select id="inputState" class="form-control">
+                        <select id="categoriaTickets" class="form-select">
                             <option selected>Selecciona una categoría</option>
-                            <option>Estudiante</option>
+                            <option >Estudiante</option>
                             <option>Junior</option>
                             <option>Trainee</option>
                         </select>
@@ -106,7 +117,7 @@
                 <!-- Total a pagar Form-->
                 <div class="row">  
                         <div class="container col-6 justify-content-center mt-3 fw-normal" style="background-color: rgb(190, 223, 235); border-radius: 5px; height:56px;width: 950px;">
-                            <h5 class="justify-content-center mt-3">Total a pagar: $</h5>
+                            <h5 class="justify-content-center mt-3">Total a pagar: $<p></p></h5>
 
                         </div>
                 </div>
@@ -115,10 +126,10 @@
                 <!--Buttons Form-->
                 <div class="row justify-content-center ms-0 mt-2 mb-6">
                     <div class="col-3">
-                        <button class="btn btn-success col-12">Borrar</button>
+                        <button class="btn btn-success col-12"  onclick = "window.location.reload()">Borrar</button>
                     </div>
                     <div class="col-3">
-                        <button class="btn btn-success col-12">Resumen</button>
+                        <button class="btn btn-success col-12" onclick="calcularTickets();validacionTickets();">Resumen</button>
                     </div>
                 </div>
                 <br>
@@ -143,7 +154,7 @@
 
 
 
-
+    
     <script src="../js/index.js"></script>
 </body>
 </html>
